@@ -70,8 +70,11 @@ git worktree list
 git worktree remove <dir>
 
 # 清理Git
-# 对git对象进行压缩
+# 垃圾回收
 git gc
+# 更深度的垃圾回收
+git gc --aggressive
+
 # 删除垃圾对象
 git prune
 # 查看垃圾对象
