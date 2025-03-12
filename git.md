@@ -85,3 +85,13 @@ git checkout --orphan <branch-name>
 ```
 
 只要删除 commit 的记录就好，因为 reflog 只是本地的记录
+
+### 关于 Git 上的其他配置
+
+`.git-credentials` 是一个命令行工具，用于存储和管理 Git 凭证信息，包括用户名和密码。它可以帮助我们自动化地输入用户名和密码的过程，避免频繁地手动输入
+
+只要输入一次密码就再也不用输入了。记得不要输入明码，用 token 代替（名称为 Github_push）
+
+```shell
+git config --global credential.helper store
+```
